@@ -14,7 +14,7 @@ env:
   DOCKER_BUILD: buildImageX.sh
   DOCKER_IMAGE: summary/openwrt-aarch64
   TAG: mini
-  TZ: Asia/Shanghai
+  TZ: America/Los_Angeles
 
 jobs:
   Build:

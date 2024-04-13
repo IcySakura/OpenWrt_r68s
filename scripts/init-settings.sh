@@ -1,7 +1,8 @@
 #!/bin/bash
 
-# Set default theme to luci-theme-argon
+# Set default theme to luci-theme-argon and change language to English
 uci set luci.main.mediaurlbase='/luci-static/argon'
+uci set luci.main.lang='en'
 uci commit luci
 
 # Disable IPV6 ula prefix

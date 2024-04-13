@@ -17,7 +17,7 @@ env:
   FIRMWARE_TAG: ROOTFS_PLUS
   OPENWRT_RELEASE: true
   OPENWRT_TAG: ARMv8_PLUS
-  TZ: Asia/Shanghai
+  TZ: America/Los_Angeles
 
 jobs:
   Build:

@@ -17,7 +17,7 @@ env:
   FIRMWARE_TAG: ROOTFS_MINI
   OPENWRT_RELEASE: true
   OPENWRT_TAG: ARMv8_MINI
-  TZ: Asia/Shanghai
+  TZ: America/Los_Angeles
 
 jobs:
   Build:

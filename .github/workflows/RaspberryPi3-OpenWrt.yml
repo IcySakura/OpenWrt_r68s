@@ -16,7 +16,7 @@ env:
   UPLOAD_BIN_DIR: false
   FIRMWARE_RELEASE: true
   FIRMWARE_TAG: RaspberryPi3
-  TZ: Asia/Shanghai
+  TZ: America/Los_Angeles
 
 jobs:
   Build:
