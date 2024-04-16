@@ -89,7 +89,7 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 # export CFLAGS+="-Doff64_t=__off64_t"
-export CFLAGS+="D_LARGEFILE64_SOURCE"
+# export CFLAGS+="D_LARGEFILE64_SOURCE"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
