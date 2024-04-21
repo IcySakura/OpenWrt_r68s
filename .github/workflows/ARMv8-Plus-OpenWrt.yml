@@ -21,7 +21,7 @@ env:
 
 jobs:
   Build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
 
     outputs:
       COMMIT_AUTHOR: ${{ steps.clone.outputs.COMMIT_AUTHOR }}
@@ -207,7 +207,7 @@ jobs:
 
   Package:
     needs: [Build]
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
 
     env:
       COMMIT_AUTHOR: ${{ needs.Build.outputs.COMMIT_AUTHOR }}
