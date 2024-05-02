@@ -109,7 +109,7 @@ cp -f $GITHUB_WORKSPACE/scripts/011-fix-mbo-modules-build.patch package/network/
 sed -i 's/TARGET_CFLAGS.*/TARGET_CFLAGS += -DHAVE_MAP_SYNC -D_LARGEFILE64_SOURCE/g' feeds/packages/utils/xfsprogs/Makefile
 
 # Fix armv8 perl build error
-sed -i 's/TARGET_CFLAGS_PERL.*/TARGET_CFLAGS_PERL += -D_LARGEFILE64_SOURCE/g' feeds/packages/lang/perl/Makefile
+sed -i 's/TARGET_CFLAGS.*/TARGET_CFLAGS += -D_LARGEFILE64_SOURCE/g' feeds/packages/lang/perl/Makefile
 
 # 修改 Makefile
 find package/*/ -maxdepth 2 -path "*/Makefile" | xargs -i sed -i 's/..\/..\/luci.mk/$(TOPDIR)\/feeds\/luci\/luci.mk/g' {}
