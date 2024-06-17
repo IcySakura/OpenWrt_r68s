@@ -118,7 +118,6 @@
 　├── 微信推送<br/>
 　├── 上网时间控制<br/>
 　├── 解锁网易云灰色歌曲<br/>
-　├── OpenClash<br/>
 　├── 动态 DNS<br/>
 　├── MultiSD_Lite<br/>
 　├── SmartDNS<br/>

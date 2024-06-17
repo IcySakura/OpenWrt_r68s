@@ -15,7 +15,7 @@ env:
 
 jobs:
   Package:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id || ! github.event.sender.id
     name: Package for ${{ matrix.version }}
     strategy:
@@ -74,10 +74,10 @@ jobs:
       env:
         OPENWRT_ARMVIRT: openwrt/bin/targets/*/*/*rootfs.tar.gz
         PACKAGE_SOC: all
-        WHOAMI: Haiibo
-        KERNEL_VERSION_NAME: 5.15.13_6.1.5
+        WHOAMI: IcySakura
+        KERNEL_VERSION_NAME: 6.1.5_6.6.33
         KERNEL_AUTO_LATEST: true
-        DISTRIB_REVISION: R${{ env.DATE1 }} by Haiibo
+        DISTRIB_REVISION: R${{ env.DATE1 }} by IcySakura
 
     - name: Upload OpenWrt To Artifact
       if: env.PACKAGED_STATUS == 'success' && env.UPLOAD_RELEASE != 'true'
